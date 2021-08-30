@@ -12,6 +12,7 @@ public class QuickSort {
     }
     ////aasdasd
     ///asdasd
+    //helooo from mac
 
 //    /sdfsdfsd
     public static void quickSort(int[] input, int start, int end) {
