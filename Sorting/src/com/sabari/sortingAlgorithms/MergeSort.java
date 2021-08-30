@@ -11,6 +11,7 @@ public class MergeSort {
         }
     }
 
+    //testing
     // { 20, 35, -15, 7, 55, 1, -22 }
     public static void mergeSort(int[] input, int start, int end) {
 
