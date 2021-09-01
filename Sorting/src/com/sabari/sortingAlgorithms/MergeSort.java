@@ -2,7 +2,7 @@ package com.sabari.sortingAlgorithms;
 
 public class MergeSort {
     public static void main(String[] args) {
-        int[] intArray = { 20, 35,4, -15, 7, 55, 1, -22 };
+        int[] intArray = { 20, 35, 4, -15, 7, 55, 1, -22 };
 
         mergeSort(intArray, 0, intArray.length);
 
@@ -11,24 +11,23 @@ public class MergeSort {
         }
     }
 
-    //testing
-    // { 20, 35, -15, 7, 55, 1, -22 }
-    public static void mergeSort(int[] input, int start, int end) {
+    // { 20, 35, 4,-15, 7, 55, 1, -22 }
+    public static void mergeSort(int[] arr, int start, int end) {
 
         if (end - start < 2) {
             return;
         }
 
         int mid = (start + end) / 2;
-        mergeSort(input, start, mid);
-        mergeSort(input, mid, end);
-        merge(input, start, mid, end);
+        mergeSort(arr, start, mid);
+        mergeSort(arr, mid, end);
+        merge(arr, start, mid, end);
     }
 
-    // { 20, 35, -15, 7, 55, 1, -22 }
-    public static void merge(int[] input, int start, int mid, int end) {
+    // { 20, 35, 4,-15, 7, 55, 1, -22 }
+    public static void merge(int[] arr, int start, int mid, int end) {
 
-        if (input[mid - 1] <= input[mid]) {
+        if (arr[mid - 1] <= arr[mid]) {
             return;
         }
 
@@ -38,12 +37,15 @@ public class MergeSort {
 
         int[] temp = new int[end - start];
         while (i < mid && j < end) {
-            temp[tempIndex++] = input[i] <= input[j] ? input[i++] : input[j++];
+            temp[tempIndex++] = arr[i] <= arr[j] ? arr[i++] : arr[j++];
         }
 
-        System.arraycopy(input, i, input, start + tempIndex, mid - i);
-        System.arraycopy(temp, 0, input, start, tempIndex);
+        System.arraycopy(arr, i, arr, start + tempIndex, mid - i);
+        System.arraycopy(temp, 0, arr, start, tempIndex);
 
 
     }
 }
+
+
+

@@ -10,11 +10,7 @@ public class QuickSort {
             System.out.println(intArray[i]);
         }
     }
-    ////aasdasd
-    ///asdasd
-    //helooo from mac
 
-//    /sdfsdfsd
     public static void quickSort(int[] input, int start, int end) {
         if (end - start < 2) {
             return;
