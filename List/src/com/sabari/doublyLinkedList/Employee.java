@@ -1,4 +1,5 @@
-package com.sabari.linkedList;
+package com.sabari.doublyLinkedList;
+
 import java.util.Objects;
 
 public class Employee {
@@ -41,7 +42,7 @@ public class Employee {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        com.sabari.linkedList.Employee employee = (com.sabari.linkedList.Employee) o;
+        com.sabari.doublyLinkedList.Employee employee = (com.sabari.doublyLinkedList.Employee) o;
         return id == employee.id && firstName.equals(employee.firstName) && lastName.equals(employee.lastName);
     }
 
@@ -49,6 +50,7 @@ public class Employee {
     public int hashCode() {
         return Objects.hash(firstName, lastName, id);
     }
+
 
     @Override
     public String toString() {
@@ -58,4 +60,5 @@ public class Employee {
                 ", id=" + id +
                 '}';
     }
+
 }

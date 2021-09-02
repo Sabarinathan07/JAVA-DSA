@@ -1,4 +1,4 @@
-package com.sabari.linkedList;
+package com.sabari.singlyLinkedList;
 
 public class EmployeeLinkedList {
 
