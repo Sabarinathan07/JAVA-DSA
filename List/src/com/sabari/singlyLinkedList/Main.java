@@ -15,6 +15,12 @@ public class Main {
         list.addToFront(ash);
         list.addToFront(ganesh);
 
+        System.out.println(list.getSize());
+
+        list.printList();
+
+        list.removeFromFront();
+        System.out.println(list.getSize());
         list.printList();
 
 
