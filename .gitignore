@@ -1,4 +1,5 @@
 .DS_Store
+*.html
 /.DS_Store/
 # Default ignored files
 /shelf/
