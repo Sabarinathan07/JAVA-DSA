@@ -16,9 +16,14 @@ public class Main {
         employeeList.forEach(employee -> System.out.println(employee));
 
         //By using for loop
-        for(int i=0;i< employeeList.size();i++){
-            System.out.println(employeeList.get(i));
+        for (Employee employee : employeeList) {
+            System.out.println(employee);
         }
+//
+//        for(int i=0;i< employeeList.size();i++){
+//            System.out.println(employeeList.get(i));
+//        }
+
 
 
 

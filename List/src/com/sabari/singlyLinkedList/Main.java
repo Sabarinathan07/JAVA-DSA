@@ -19,9 +19,9 @@ public class Main {
 
         list.printList();
 
-        list.removeFromFront();
-        System.out.println(list.getSize());
-        list.printList();
+//        list.removeFromFront();
+//        System.out.println(list.getSize());
+//        list.printList();
 
 
 //        list.removeFromFront();
